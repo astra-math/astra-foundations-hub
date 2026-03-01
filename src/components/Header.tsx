@@ -13,12 +13,13 @@ const navLinks = [
 const Header = () => {
   return (
     <header className="bg-navy border-b border-gold/20">
-      <div className="container-astra flex items-center justify-between py-5 md:py-6">
+      <div className="container-astra flex items-center justify-between" style={{ paddingTop: '24px', paddingBottom: '24px' }}>
         <Link to="/" className="flex items-center gap-3">
           <img
             src={logo}
             alt="Astra Math Circle"
-            className="h-12 md:h-14 w-auto"
+            className="w-auto"
+            style={{ height: '50px' }}
           />
           <span className="font-heading font-semibold text-cream text-lg md:text-xl tracking-wide hidden sm:inline">
             Astra Math Circle
