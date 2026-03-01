@@ -18,8 +18,7 @@ const Header = () => {
           <img
             src={logo}
             alt="Astra Math Circle"
-            className="w-auto"
-            style={{ height: '50px' }}
+            className="w-auto h-[50px] md:h-[60px]"
           />
           <span className="font-heading font-semibold text-cream text-lg md:text-xl tracking-wide hidden sm:inline">
             Astra Math Circle
