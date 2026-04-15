@@ -78,17 +78,31 @@
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
   }
 
-  p {
-    max-width: 70ch;
+  p,
+  li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.65;
+    text-wrap: pretty;
   }
+
+
 }
 
 @layer components {
@@ -99,7 +113,9 @@
 
   .gold-divider {
     @apply w-full h-px;
-    background-color: hsl(var(--gold) / 0.3);
+    background-color: #8c7d4d;
+    /* Dull ochre gold */
+    opacity: 0.5;
   }
 
   .section-padding {

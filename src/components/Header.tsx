@@ -4,33 +4,35 @@ import logo from "@/assets/logo-light.png";
 const navLinks = [
   { label: "Home", to: "/" },
   { label: "Programs", to: "/programs" },
+  { label: "Summer Immersion", to: "/summer-immersion" },
   { label: "Philosophy", to: "/philosophy" },
-  { label: "Workshops", to: "/workshops" },
+  { label: "Discovery Sessions", to: "/workshops" },
   { label: "About", to: "/about" },
+  { label: "Careers", to: "/careers" },
   { label: "FAQ", to: "/faq" },
 ];
 
 const Header = () => {
   return (
-    <header className="bg-navy border-b border-gold/20">
-      <div className="container-astra flex items-center justify-between" style={{ paddingTop: '24px', paddingBottom: '24px' }}>
+    <header className="bg-navy border-b border-gold/20 sticky top-0 z-[100]">
+      <div className="container-astra flex items-center justify-between py-2">
         <Link to="/" className="flex items-center gap-3">
           <img
             src={logo}
             alt="Astra Math Circle"
-            className="w-auto h-[50px] md:h-[60px]"
+            className="w-auto h-12 md:h-20"
           />
           <span className="font-heading font-semibold text-cream text-lg md:text-xl tracking-wide hidden sm:inline">
             Astra Math Circle
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="text-cream/80 hover:text-gold font-body text-sm tracking-wide transition-colors"
+              className="text-cream/80 hover:text-gold font-sans text-sm tracking-wide transition-colors"
             >
               {link.label}
             </Link>
@@ -75,7 +77,7 @@ const MobileMenu = () => {
                 key={link.to}
                 to={link.to}
                 onClick={() => setOpen(false)}
-                className="text-cream/80 hover:text-gold font-body text-base py-1 transition-colors"
+                className="text-cream/80 hover:text-gold font-sans text-base py-1 transition-colors"
               >
                 {link.label}
               </Link>
