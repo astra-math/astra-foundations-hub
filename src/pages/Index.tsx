@@ -245,19 +245,19 @@ const Index = () => {
               <p className="text-cream/70 text-base italic leading-relaxed mb-4">
                 "I really enjoyed the math Discovery Session. The topic was interesting and made me think in new ways. The activities were fun, and I liked trying different ways to solve the problems. It didn't feel like a regular class, and I had a great time learning something new."
               </p>
-              <cite className="text-cream text-sm not-italic mt-auto block">— Anushka, G6 student, Inventure Academy, Bangalore</cite>
+              <cite className="text-cream text-sm not-italic mt-auto block">— Anushka, Grade 6 student, <br/> Inventure Academy, Bangalore</cite>
             </blockquote>
             <blockquote className="border-l border-gold/30 pl-6 flex flex-col justify-between">
               <p className="text-cream/70 text-base italic leading-relaxed mb-4">
                 "The Discovery Session opened up a completely new way of thinking about mathematics for my child."
               </p>
-              <cite className="text-cream text-sm not-italic mt-auto block">— Ketaki, Mother of a G5 student, Phoenix Greens, Hyderabad</cite>
+              <cite className="text-cream text-sm not-italic mt-auto block">— Ketaki, Mother of a Grade 5 student, Phoenix Greens, Hyderabad</cite>
             </blockquote>
             <blockquote className="border-l border-gold/30 pl-6 flex flex-col justify-between">
               <p className="text-cream/70 text-base italic leading-relaxed mb-4">
                 "As a parent, I feel these are the right classes for her. They can help her become better at maths and overcome the challenges she previously faced."
               </p>
-              <cite className="text-cream text-sm not-italic mt-auto block">— Sudhanshu, Father of a G7 student, The Knowledge Habitat, Gurugram</cite>
+              <cite className="text-cream text-sm not-italic mt-auto block">— Sudhanshu, Father of a Grade 7 student, The Knowledge Habitat, Gurugram</cite>
             </blockquote>
           </div>
         </div>
