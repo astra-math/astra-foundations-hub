@@ -112,65 +112,72 @@ const Index = () => {
 
       <div className="gold-divider" />
 
-      {/* The Circles */}
-      <section className="light-section bg-cream section-padding">
-        <div className="container-astra">
-          <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-4">
-            The Circles
-          </h2>
-          <p className="text-foreground/70 text-base md:text-lg mb-12 max-w-2xl leading-relaxed">
-            Four circles, placed by readiness, not grade. Every student undergoes an interactive discovery session before joining.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
-            {[
-              {
-                name: "Foundations Circle",
-                grades: "Grades 5–7",
-                description: "Builds the habit of thinking before being shown. Pattern recognition, logical clarity, and early reasoning discipline.",
-                benchmark: "Benchmark: AMC 8, UKMT Junior."
-              },
-              {
-                name: "Explorers Circle",
-                grades: "Grades 7–9",
-                description: "From single-step answers to multi-step reasoning. Strategy selection, casework discipline, and learning to re-enter a problem after failure.",
-                benchmark: "Benchmark: AMC 10, IOQM, UKMT Intermediate."
-              },
-              {
-                name: "Olympiad Circle",
-                grades: "Grades 8–10",
-                description: "From solving problems to constructing arguments. Number theory, algebra, combinatorics, geometry, and early proof writing.",
-                benchmark: "Benchmark: AMC 10/12, IOQM, UKMT Senior."
-              },
-              {
-                name: "Advanced Circle",
-                grades: "Invitation only",
-                description: "For students already performing at national competition level. Proof-driven, individually paced, mentor-led.",
-                benchmark: "RMO, AIME, INMO, BMO1/BMO2, US(J)MO."
-              },
-            ].map((circle) => (
-              <div
-                key={circle.name}
-                className="border border-gold/20 bg-white rounded-lg p-6 flex flex-col h-full shadow-sm"
-              >
-                <div className="mb-4">
-                  <h3 className="font-heading text-xl text-foreground font-semibold leading-tight">
-                    {circle.name}
-                  </h3>
-                  <p className="text-gold text-sm mt-1">{"· " + circle.grades}</p>
-                </div>
-                <div className="flex flex-col flex-grow">
-                  <p className="text-foreground/70 text-sm leading-relaxed mb-4">
-                    {circle.description}
-                  </p>
-                  <p className="text-foreground/90 text-xs mt-auto pt-2 border-t border-gold/10">
-                    {circle.benchmark}
-                  </p>
-                </div>
-              </div>
-            ))}
+    {/* The Circles */}
+<section className="light-section bg-cream section-padding">
+  <div className="container-astra">
+    <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-4">
+      The Circles
+    </h2>
+
+    <p className="text-foreground/70 text-base md:text-lg mb-12 max-w-2xl leading-relaxed">
+      Four circles, placed by readiness rather than age alone. Every student participates in an interactive discovery session before placement.
+    </p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
+      {[
+        {
+          name: "Foundations Circle",
+          description:
+            "Builds pattern recognition, logical clarity, and the habit of explaining an idea rather than just producing an answer.",
+          benchmark:
+            "AMC 8 • UKMT Junior • Australian Mathematics Competition"
+        },
+        {
+          name: "Explorers Circle",
+          description:
+            "From finding answers to constructing arguments. Multi-step reasoning, strategy selection, and recovery from failed approaches.",
+          benchmark:
+            "AMC 8 • Early AMC 10 • Early IOQM • UKMT Intermediate"
+        },
+        {
+          name: "Olympiad Circle",
+          description:
+            "From solving to proving. Students begin building rigorous arguments across number theory, algebra, combinatorics, and geometry.",
+          benchmark:
+            "AMC 10/12 • IOQM • UKMT Senior"
+        },
+        {
+          name: "Advanced Circle",
+          description:
+            "Proof-driven, individually paced, and mentor-led for students already operating near national competition level.",
+          benchmark:
+            "RMO • AIME • INMO • BMO • USAJMO• USAMO"
+        },
+      ].map((circle) => (
+        <div
+          key={circle.name}
+          className="border border-gold/20 bg-white rounded-lg p-5 flex flex-col h-full shadow-sm"
+        >
+          <div className="mb-4">
+            <h3 className="font-heading text-lg text-foreground font-semibold leading-snug">
+              {circle.name}
+            </h3>
+          </div>
+
+          <div className="flex flex-col flex-grow">
+            <p className="text-foreground/70 text-sm leading-relaxed mb-5">
+              {circle.description}
+            </p>
+
+            <p className="text-foreground/85 text-xs leading-relaxed mt-auto pt-3 border-t border-gold/10">
+              {circle.benchmark}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <div className="gold-divider" />
 

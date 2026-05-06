@@ -11,7 +11,7 @@ import Workshops from "./pages/Workshops";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
-import SummerImmersion from "./pages/SummerImmersion";
+import Immersion from "./pages/Immersion";
 import Careers from "./pages/Careers";
 import Registration from "./pages/Registration";
 
@@ -37,7 +37,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/programs" element={<Programs />} />
-          <Route path="/summer-immersion" element={<SummerImmersion />} />
+          <Route path="/immersion" element={<Immersion />} />
           <Route path="/philosophy" element={<Philosophy />} />
           <Route path="/workshops" element={<Workshops />} />
           <Route path="/about" element={<About />} />

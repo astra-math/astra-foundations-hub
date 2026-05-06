@@ -22,7 +22,7 @@ const Footer = () => {
               {[
                 { label: "Home", to: "/" },
                 { label: "Programs", to: "/programs" },
-                { label: "Summer Immersion", to: "/summer-immersion" },
+                { label: "Immersion", to: "/immersion" },
                 { label: "Philosophy", to: "/philosophy" },
                 { label: "Discovery Sessions", to: "/workshops" },
                 { label: "About", to: "/about" },
