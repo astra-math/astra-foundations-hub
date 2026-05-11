@@ -310,11 +310,12 @@ const Registration = () => {
 
                   <div>
                     <label className="block text-navy/70 text-base mb-1.5 font-heading">
-                      5. City of Residence
+                      5. City & Country of Residence
                     </label>
                     <input
                       type="text"
                       name="City"
+                      placeholder="Bangalore, India • Stockholm, Sweden • Singapore"
                       required
                       className="w-full border border-gold/30 bg-white rounded px-4 py-3 text-navy text-base focus:outline-none focus:border-gold"
                     />
@@ -327,6 +328,7 @@ const Registration = () => {
                     <input
                       type="tel"
                       name="Phone"
+                      placeholder="+91 98765 43210 • +46 70 123 4567"
                       required
                       className="w-full border border-gold/30 bg-white rounded px-4 py-3 text-navy text-base focus:outline-none focus:border-gold"
                     />
