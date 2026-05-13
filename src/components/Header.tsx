@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import logo from "@/assets/logo-light.png";
 
 const navLinks = [
@@ -11,6 +12,11 @@ const navLinks = [
   { label: "Careers", to: "/careers" },
   { label: "FAQ", to: "/faq" },
 ];
+
+const portalLink = {
+  label: "Student Portal",
+  href: "https://lms.astramathcircle.com/learn",
+};
 
 const Header = () => {
   return (
@@ -37,6 +43,15 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
+
+          <a
+            href={portalLink.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cream/70 hover:text-gold font-sans text-sm tracking-wide transition-colors"
+          >
+            {portalLink.label}
+          </a>
         </nav>
 
         <MobileMenu />
@@ -82,13 +97,21 @@ const MobileMenu = () => {
                 {link.label}
               </Link>
             ))}
+
+            <a
+              href={portalLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="text-cream/70 hover:text-gold font-sans text-base py-1 transition-colors"
+            >
+              {portalLink.label}
+            </a>
           </nav>
         </div>
       )}
     </div>
   );
 };
-
-import { useState } from "react";
 
 export default Header;
